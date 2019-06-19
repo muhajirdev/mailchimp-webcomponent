@@ -174,5 +174,11 @@
       headline="Subscribe to FPGA.Guide"
       subheadline="We provide blablabla"
     ></mailchimp-popup>
+    <script>
+      const el = document.querySelector("mailchimp-popup");
+      el.onSubscribe = ({ email }) => {
+        alert(email);
+      };
+    </script>
   </body>
 </html>
