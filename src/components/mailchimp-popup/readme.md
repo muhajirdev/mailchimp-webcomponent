@@ -7,9 +7,11 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type      | Default     |
-| --------- | --------- | ----------- | --------- | ----------- |
-| `visible` | `visible` |             | `boolean` | `undefined` |
+| Property      | Attribute     | Description | Type      | Default                                 |
+| ------------- | ------------- | ----------- | --------- | --------------------------------------- |
+| `headline`    | `headline`    |             | `string`  | `"Headline"`                            |
+| `subheadline` | `subheadline` |             | `string`  | `"Subheadline subheadline subheadline"` |
+| `visible`     | `visible`     |             | `boolean` | `false`                                 |
 
 
 ----------------------------------------------
