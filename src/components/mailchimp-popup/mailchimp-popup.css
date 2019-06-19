@@ -1,0 +1,56 @@
+.mailchimp-popup.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mailchimp-popup.wrapper {
+  background-color: white;
+  font-family: sans-serif;
+  padding: 3rem;
+  border-radius: 0.25rem;
+  width: 30%;
+}
+
+.mailchimp-popup.wrapper {
+  background-color: white;
+  font-family: sans-serif;
+  padding: 3rem;
+  border-radius: 0.25rem;
+  width: 30%;
+}
+
+.mailchimp-popup.headline {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.mailchimp-popup.subheadline {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.mailchimp-popup.email {
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #e3e3e3;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.mailchimp-popup.button {
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #e3e3e3;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
