@@ -5,12 +5,15 @@ import { Component, Prop, h } from "@stencil/core";
   styleUrl: "mailchimp-popup.css"
 })
 export class MailchimpPopup {
-  @Prop() visible: boolean;
+  @Prop() visible: boolean = false;
 
   @Prop() headline: string = "Headline";
   @Prop() subheadline: string = "Subheadline subheadline subheadline";
 
   render() {
+    if (!this.visible) {
+      return null;
+    }
     return (
       <div class="mailchimp-popup overlay">
         <div class="mailchimp-popup wrapper">
