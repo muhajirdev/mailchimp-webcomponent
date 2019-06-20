@@ -1,17 +1,19 @@
-import { Config } from '@stencil/core';
+import { Config } from "@stencil/core";
+import { stylus } from "@stencil/stylus";
 
 export const config: Config = {
-  namespace: 'component',
+  namespace: "component",
+  plugins: [stylus()],
   outputTargets: [
     {
-      type: 'dist',
-      esmLoaderPath: '../loader'
+      type: "dist",
+      esmLoaderPath: "../loader"
     },
     {
-      type: 'docs-readme'
+      type: "docs-readme"
     },
     {
-      type: 'www',
+      type: "www",
       serviceWorker: null // disable service workers
     }
   ]

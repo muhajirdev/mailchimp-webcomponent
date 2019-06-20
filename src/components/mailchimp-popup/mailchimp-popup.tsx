@@ -2,7 +2,7 @@ import { Component, Prop, State, h } from "@stencil/core";
 
 @Component({
   tag: "mailchimp-popup",
-  styleUrl: "mailchimp-popup.css"
+  styleUrl: "mailchimp-popup.styl"
 })
 export class MailchimpPopup {
   @Prop() visible: boolean = false;
