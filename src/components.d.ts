@@ -11,6 +11,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface MailchimpPopup {
     'headline': string;
+    'onCloseClick': () => void;
     'onSubscribe': ({ email }) => void;
     'subheadline': string;
     'visible': boolean;
@@ -33,6 +34,7 @@ declare global {
 declare namespace LocalJSX {
   interface MailchimpPopup extends JSXBase.HTMLAttributes<HTMLMailchimpPopupElement> {
     'headline'?: string;
+    'onCloseClick'?: () => void;
     'onSubscribe'?: ({ email }) => void;
     'subheadline'?: string;
     'visible'?: boolean;

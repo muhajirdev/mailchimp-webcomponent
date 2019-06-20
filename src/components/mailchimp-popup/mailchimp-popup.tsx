@@ -1,4 +1,5 @@
 import { Component, Prop, State, h } from "@stencil/core";
+import closeIcon from "./close.svg";
 
 @Component({
   tag: "mailchimp-popup",
@@ -10,6 +11,7 @@ export class MailchimpPopup {
   @Prop() headline: string = "Headline";
   @Prop() subheadline: string = "Subheadline subheadline subheadline";
   @Prop() onSubscribe: ({ email }) => void;
+  @Prop() onCloseClick: () => void;
 
   @State() email: string;
 
@@ -24,6 +26,9 @@ export class MailchimpPopup {
     return (
       <div class="mailchimp-popup overlay">
         <div class="mailchimp-popup wrapper">
+          <div class="mailchimp-popup close" onClick={this.onCloseClick}>
+            <img src={closeIcon} alt="close icon" />
+          </div>
           <div class="mailchimp-popup headline">{this.headline}</div>
           <div class="mailchimp-popup subheadline">{this.subheadline}</div>
           <form

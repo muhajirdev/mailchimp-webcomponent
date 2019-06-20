@@ -1,5 +1,16 @@
 
 .mailchimp-popup
+  position relative
+
+  &.close
+    position absolute;
+    top: 1rem;
+    right 1rem;
+    @media (min-width: 768px)
+      padding: 1rem;
+      right 3rem;
+      top: 1rem;
+
   &.overlay
     position: fixed;
     top: 0;
