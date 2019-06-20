@@ -6,12 +6,14 @@ import closeIcon from "./close.svg";
   styleUrl: "mailchimp-popup.styl"
 })
 export class MailchimpPopup {
-  @Prop() visible: boolean = false;
+  @Prop({ mutable: true }) visible: boolean = false;
 
   @Prop() headline: string = "Headline";
   @Prop() subheadline: string = "Subheadline subheadline subheadline";
   @Prop() onSubscribe: ({ email }) => void;
-  @Prop() onCloseClick: () => void;
+  @Prop() onCloseClick = () => {
+    this.visible = false;
+  };
 
   @State() email: string;
 
